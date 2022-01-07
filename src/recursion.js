@@ -29,6 +29,10 @@ var arraySum = function(array) {
 
 // 4. Check if a number is even.
 var isEven = function(n) {
+  return n / 2 === 1 ? true
+  : n === 1 ? false
+  : (n - 1) / 2 === 1 ? false
+  : !isEven(n - 1);
 };
 
 // 5. Sum all integers below a given integer.
