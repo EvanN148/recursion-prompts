@@ -265,9 +265,9 @@ var mergeSort = function(array) {
 // console.log(obj2); // {a:1,b:{bb:{bbb:2}},c:3}
 // obj1 === obj2 // false
 var clone = function(input) {
-  return typeof input === 'object' ? input 
-  : Array.isArray(input) ? input.map((el) => clone(el))
-  : Object.keys(input).length === 1 ? input : Object.keys(input).splice(1).map((el) => {
-    clone(input[el])
-  })
+//   return typeof input === 'object' ? input 
+//   : Array.isArray(input) ? input.map((el) => clone(el))
+//   : Object.keys(input).length === 1 ? input : Object.keys(input).splice(1).map((el) => {
+//     clone(input[el])
+//   })
 };
